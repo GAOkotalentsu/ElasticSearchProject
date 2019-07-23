@@ -9,6 +9,7 @@ import {
   ResultCard
 } from '@appbaseio/reactivesearch';
 import './App.css';
+import './assets/css/datasearch.css';
 
 class App extends Component {
   render() {
@@ -31,10 +32,33 @@ class App extends Component {
               "input": "searchbox",
               "list": "suggestionlist"
             }}
-            autosuggest={false}
+            URLParams
+              icon={
+                <button
+                  style={{
+                    color: "#fff",
+                    background: "#3ea662",
+                    backgroundColor: "#4dbd74",
+                    borderColor: "#4dbd74",
+                    outline: "none",
+                    border: 0,
+                    position: "absolute",
+                    right: -470,
+                    height: 40,
+                    top: -12,
+                    width: 70,
+                    margin: 0,
+                    cursor: "pointer",
+                    borderRadius: 5,
+                  }}
+                >
+                  Search
+                </button>
+              }
             iconPosition="left"
             filterLabel="search"
           />
+          
         </div>
         <div className={"display"}>
           <div className={"leftSidebar"}>
